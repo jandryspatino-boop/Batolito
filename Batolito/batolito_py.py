@@ -9,7 +9,7 @@ Original file is located at
 Modulo 1: Base
 """
 
-// Archivo: App.js (React)
+# Archivo: App.js (React)
 import React, { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
@@ -202,11 +202,11 @@ const response = await fetch('http://127.0.0.1:8000/procesar_texto', {
   body: JSON.stringify({ texto: textoExtraido })
 });
 const data = await response.json();
-// data.secciones contendrá las secciones y frases clave
+# data.secciones contendrá las secciones y frases clave
 
 """Modulo 4: Api Cientifica"""
 
-// Archivo: App.js
+# Archivo: App.js
 import React, { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 
@@ -328,7 +328,7 @@ export default App;
 
 """Modulo 5: Módulo de diagramas interactivos científicos para la web"""
 
-// Archivo: DiagramasCientificos.js
+# Archivo: DiagramasCientificos.js
 import React from 'react';
 import Plot from 'react-plotly.js';
 
@@ -375,7 +375,7 @@ npm install react-plotly.js plotly.js
 
 import DiagramasCientificos from './DiagramasCientificos';
 
-// Dentro de tu return, p.ej. al final:
+# Dentro de tu return, p.ej. al final:
 {procesado && (
   <div style={{ marginTop: 40 }}>
     <DiagramasCientificos />
@@ -384,7 +384,7 @@ import DiagramasCientificos from './DiagramasCientificos';
 
 """Diagrama 2: Esquema de Asimilación Cortical"""
 
-// Archivo: AsimilacionCortical.js
+# Archivo: AsimilacionCortical.js
 import React from 'react';
 import Plot from 'react-plotly.js';
 
@@ -436,7 +436,7 @@ export default function AsimilacionCortical() {
 
 """Diagrama 3: Visualización esquemática de Mezcla de Magmas (Magma Mixing)"""
 
-// Archivo: MezclaMagmas.js
+# Archivo: MezclaMagmas.js
 import React from 'react';
 import Plot from 'react-plotly.js';
 
@@ -490,7 +490,7 @@ import DiagramasCientificos from './DiagramasCientificos';
 import AsimilacionCortical from './AsimilacionCortical';
 import MezclaMagmas from './MezclaMagmas';
 
-// En el return, dentro de {procesado && (...)}
+# En el return, dentro de {procesado && (...)}
 
 <DiagramasCientificos />
 <AsimilacionCortical />
@@ -502,13 +502,13 @@ npm install leaflet react-leaflet
 
 @import url("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css");
 
-// Archivo: MapaGeologico.js
+# Archivo: MapaGeologico.js
 import React from 'react';
 import { MapContainer, TileLayer, GeoJSON, LayersControl } from 'react-leaflet';
 
 const { BaseLayer, Overlay } = LayersControl;
 
-// Ejemplo simplificado: GeoJSON de zonas geológicas (deberás usar datos reales)
+# Ejemplo simplificado: GeoJSON de zonas geológicas (deberás usar datos reales)
 
 const geojsonBatolito = {
   "type": "FeatureCollection",
@@ -579,7 +579,7 @@ export default function MapaGeologico() {
 
 import MapaGeologico from './MapaGeologico';
 
-// Y en tu return, probablemente luego de diagramas:
+# Y en tu return, probablemente luego de diagramas:
 {procesado && (
   <>
     <DiagramasCientificos />
@@ -593,7 +593,7 @@ import MapaGeologico from './MapaGeologico';
 
 npm install react-flow-renderer
 
-// Archivo: MapaMental.js
+# Archivo: MapaMental.js
 import React, { useState, useCallback } from 'react';
 import ReactFlow, {
   MiniMap,
@@ -638,7 +638,7 @@ export default MapaMental;
 
 import MapaMental from './MapaMental';
 
-// Dentro del return, bajo las visualizaciones previas
+# Dentro del return, bajo las visualizaciones previas
 {procesado && <MapaMental />}
 
 """Backend para generación dinámica de mapa mental conceptual"""
@@ -819,7 +819,7 @@ def generar_mapa_mental(request: ConsultaRequest):
 
 npm install react-tooltip
 
-// Archivo: NodoConTooltip.js
+# Archivo: NodoConTooltip.js
 import React from 'react';
 import ReactTooltip from 'react-tooltip';
 
